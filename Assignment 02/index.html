@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <br>
+
+        <h1>Select Mobile Brand and Model</h1>    
+
+        <label for="brand">Choose a brand:</label>
+
+        <select id="brand" onchange="updateModels()">
+            <option value="">
+                --Select Brand--
+            </option>
+            <option value="iphone">
+                iPhone
+            </option>
+            <option value="xiomi">
+                Xiaomi
+            </option>
+            <option value="realme">
+                Realme
+            </option>
+            <option value="samsung">
+                Samsung
+            </option>
+        </select>
+    
+
+        <label for="model">Choose a model:</label>
+        <select id="model">
+            <option value="">--Select Model--</option>
+        </select>
+    
+        
+        <button onclick="showDetails()">Search</button>
+
+        <br><br>
+
+        <div id="mobileDetails" style="display: none;">
+            <h3>
+                Phone Details:
+            </h3>
+            <p id="processor"></p>
+            <p id="memory"></p>
+            <p id="camera"></p>
+            <p id="battery"></p>
+            <p id="operatingSystem"></p>
+            <p id="specialFeatures"></p>
+        </div>
+
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
